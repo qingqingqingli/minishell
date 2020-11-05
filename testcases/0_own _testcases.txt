@@ -1,0 +1,160 @@
+
+####################################################################
+#                           CD			                           #
+####################################################################
+
+cd test
+
+cd /Users/roybakker/Documents/Codam/minishell/5_execution/executable
+
+cd asdf
+
+cd test with four arguments
+
+cd test | cat main.c
+
+cd test < out99
+
+cd test > out | cat main.c
+
+cd test < out99 | echo hallo
+
+cd nothing ; echo hallo
+
+ls -la | cd
+
+ls -la | cd test
+ls -la > out | cd test
+
+cd test | ls -la
+
+####################################################################
+#                           PWD 		                           #
+####################################################################
+
+ls -la | pwd | cat
+
+ls -la | pwd | echo
+
+####################################################################
+#                           ECHO 		                           #
+####################################################################
+
+echo "hallo
+echo "echo   ; echo hi
+echo "hi  \"
+
+echo 'hi
+echo 'hi   ; echo hi
+
+echo <
+echo hallo < | echo
+echo <   < test
+echo <<   < test
+echo <   ; echo hallo
+
+echo >
+echo hallo > | test
+echo hallo >> | echo
+echo >   > test
+echo >>   > test
+echo >   ; echo hallo
+
+echo hallo ||   t
+echo hallo ||   ;
+echo hallo ||   echo hi; echo hallo
+echo hallo ||| hallo
+
+echo hallo |
+echo hallo >
+echo hallo >>
+echo hallo <
+echo hallo \
+
+; echo
+| echo
+
+echo hallo ;; echo hi
+
+####################################################################
+#                           PIPE 		                           #
+####################################################################
+
+cat < main.c > out
+./test/child > out
+
+pwd | cat
+
+pwd | cat > out
+
+ls -la | grep Nov > out
+
+ls -la | grep Nov
+
+ls -la > out | grep Nov
+
+ls | grep Nov < main.c
+
+ls > out | grep Nov < main.c
+
+ls -la | grep Nov | grep test > out
+
+ls -la | grep Nov | grep test | grep test_pipe
+
+ls -la | grep Nov | grep test | grep test_pipe > out
+
+ls -la | grep Nov | grep qli | grep 30 | grep test | grep test_pipe > out
+
+pwd | cat | grep /home/ > out
+
+ls -la | grep Nov > out| grep test | grep test_pipe
+
+ls -la | grep Nov | grep test > out | grep test_pipe
+
+ls -la > out| grep Nov | grep test > out | grep test_pipe
+
+ls -la | grep Nov | cat
+
+####################################################################
+#                           REDIRECTION	                           #
+####################################################################
+
+cat main.c > out | grep codam
+
+cat main.c > out | > out1
+
+cat main.c > out > out1 > out2 | echo hello
+
+cat main.c > out > out1 > out2 | cat
+
+cat main.c > out > out1 > out2 ; cat
+
+cat main.c < input
+
+cat main.c | < input
+
+cat <int1 <int2 < int3
+
+> out
+
+>> out
+
+< int
+
+< int
+
+####################################################################
+#                           EXIT STATUS	                           #
+####################################################################
+
+./test ; echo $?
+
+./test/child_no_permission ; echo $?
+
+./test/child ; echo $?
+
+adsafdsfas ; echo $?
+
+$hihihi ; echo $?
+
+echo $hkskks ; echo $?
