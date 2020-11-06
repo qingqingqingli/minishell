@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="https://github.com/qingqingqingli/readme_images/blob/master/codam_logo.png" height='200'>
-</p>
+[![Logo](https://github.com/qingqingqingli/readme_images/blob/master/codam_logo_1.png)](https://github.com/qingqingqingli/minishell)
 
 # minishell
 ***The objective of this project is for you to create a shell. New concepts about processes and file descriptors are introduced.***
