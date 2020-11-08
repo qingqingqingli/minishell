@@ -49,12 +49,12 @@ $ ./minishell
 
 ## Examples
 
-- Create minishell executable
+- Create ```minishell``` executable
 
 [![minishell_0](https://github.com/qingqingqingli/readme_images/blob/master/minishell_0.png)](https://github.com/qingqingqingli/minishell)
 
 [![minishell_1](https://github.com/qingqingqingli/readme_images/blob/master/minishell_1.png)](https://github.com/qingqingqingli/minishell)
 
-- Start testing
+- Start testing!
 
 [![minishell_2](https://github.com/qingqingqingli/readme_images/blob/master/minishell_2.png)](https://github.com/qingqingqingli/minishell)
