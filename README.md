@@ -41,7 +41,7 @@ This is a group project completed by [Q. Li](https://github.com/qingqingqingli")
 > Run the following commands
 
 ```shell
-$ git clone https://github.com/qingqingqingli/minishell minishell
+$ git clone https://github.com/qingqingqingli/minishell
 $ cd minishell
 $ make
 $ ./minishell
