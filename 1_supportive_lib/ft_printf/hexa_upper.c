@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   hexa_lower.c                                       :+:    :+:            */
+/*   hexa_upper.c                                       :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: rbakker <rbakker@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/12/19 15:13:29 by rbakker       #+#    #+#                 */
-/*   Updated: 2020/11/06 19:50:51 by qli           ########   odam.nl         */
+/*   Created: 2019/12/19 18:08:59 by rbakker       #+#    #+#                 */
+/*   Updated: 2020/11/08 16:58:14 by qli           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ft_printf.h"
+#include "ft_printf.h"
 
-void	hexa_lower_output(t_format *format, va_list arguments)
+void	hexa_upper_output(t_format *format, va_list arguments)
 {
 	unsigned int	value;
 
@@ -28,14 +28,14 @@ void	hexa_lower_output(t_format *format, va_list arguments)
 		return ;
 	}
 	if (format->min_flag == 1)
-		min_flag_x(format, value);
+		min_flag_xx(format, value);
 	else if (format->zero_flag == 1)
-		zero_flag_x(format, value);
+		zero_flag_xx(format, value);
 	else
-		no_flag_x(format, value);
+		no_flag_xx(format, value);
 }
 
-void	min_flag_x(t_format *format, unsigned int value)
+void	min_flag_xx(t_format *format, unsigned int value)
 {
 	int				len;
 	int				i;
@@ -47,7 +47,7 @@ void	min_flag_x(t_format *format, unsigned int value)
 		write_function('0', format);
 		i++;
 	}
-	ft_puthex_lower(value, format);
+	ft_puthex_upper(value, format);
 	while (i < (format->width - len))
 	{
 		write_function(' ', format);
@@ -55,7 +55,7 @@ void	min_flag_x(t_format *format, unsigned int value)
 	}
 }
 
-void	zero_flag_x(t_format *format, unsigned int value)
+void	zero_flag_xx(t_format *format, unsigned int value)
 {
 	int				len;
 	int				i;
@@ -78,10 +78,10 @@ void	zero_flag_x(t_format *format, unsigned int value)
 		write_function('0', format);
 		i++;
 	}
-	ft_puthex_lower(value, format);
+	ft_puthex_upper(value, format);
 }
 
-void	no_flag_x(t_format *format, unsigned int value)
+void	no_flag_xx(t_format *format, unsigned int value)
 {
 	int				len;
 	int				i;
@@ -101,10 +101,10 @@ void	no_flag_x(t_format *format, unsigned int value)
 		write_function('0', format);
 		i++;
 	}
-	ft_puthex_lower(value, format);
+	ft_puthex_upper(value, format);
 }
 
-void	ft_puthex_lower(unsigned long value, t_format *format)
+void	ft_puthex_upper(unsigned int value, t_format *format)
 {
 	unsigned int	division;
 	char			hex[100];
@@ -119,7 +119,7 @@ void	ft_puthex_lower(unsigned long value, t_format *format)
 		if (division < 10)
 			hex[number] = 48 + division;
 		else
-			hex[number] = 87 + division;
+			hex[number] = 55 + division;
 		number++;
 		value = value / 16;
 	}

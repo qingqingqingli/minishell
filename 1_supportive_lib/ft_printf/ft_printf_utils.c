@@ -6,11 +6,11 @@
 /*   By: rbakker <rbakker@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/12/13 11:18:23 by rbakker       #+#    #+#                 */
-/*   Updated: 2020/11/06 19:50:51 by qli           ########   odam.nl         */
+/*   Updated: 2020/11/08 16:58:14 by qli           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ft_printf.h"
+#include "ft_printf.h"
 
 int			specifier_checker(const char *str, int *spot, int count)
 {
