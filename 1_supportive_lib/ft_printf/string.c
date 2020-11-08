@@ -6,11 +6,11 @@
 /*   By: rbakker <rbakker@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/12/19 13:41:03 by rbakker       #+#    #+#                 */
-/*   Updated: 2020/10/19 11:54:52 by rbakker       ########   odam.nl         */
+/*   Updated: 2020/11/06 19:50:51 by qli           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../ft_printf.h"
 
 void	string_output(t_format *format, va_list arguments)
 {

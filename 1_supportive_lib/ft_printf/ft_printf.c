@@ -6,11 +6,11 @@
 /*   By: rbakker <rbakker@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/12/10 15:53:47 by rbakker       #+#    #+#                 */
-/*   Updated: 2020/10/28 12:55:09 by roybakker     ########   odam.nl         */
+/*   Updated: 2020/11/06 19:50:51 by qli           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../ft_printf.h"
 
 void	print_charachters(const char *str, int *spot, t_format *format)
 {
