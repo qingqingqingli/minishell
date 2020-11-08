@@ -12,7 +12,7 @@ This is a group project completed by [Q. Li](https://github.com/qingqingqingli")
 
 - Show a ```prompt``` when waiting for a new command
 
-- Search and launch the right executable (based on the PATH variable or by using relative or absolute path)
+- Search and launch the right ```executable``` (based on the ```$PATH``` variable or by using relative or absolute path)
 
 - Implement the below builtins:
   - ```echo``` with option ’-n’
@@ -25,11 +25,11 @@ This is a group project completed by [Q. Li](https://github.com/qingqingqingli")
 
 - ```;``` to separate commands
 
+- Pipes ```|```
+
 - ```'``` and ```"``` except for multiline commands
 
 - Redirections ```<``` ```>``` ```>>``` except for file descriptor aggregation
-
-- Pipes ```|```
 
 - ```Environment variables``` ($ followed by characters)
 
