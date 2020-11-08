@@ -23,19 +23,19 @@ This is a group project completed by [Q. Li](https://github.com/qingqingqingli")
   - ```env``` without any options and any arguments
   - ```exit``` without any options
 
-- ```;``` in the command should separate commands
+- ```;``` to separate commands
 
-- ```'``` and ```"``` should work except for multiline commands
+- ```'``` and ```"``` except for multiline commands
 
-- Redirections ```<``` ```>``` ```>>``` should work except for file descriptor aggregation
+- Redirections ```<``` ```>``` ```>>``` except for file descriptor aggregation
 
-- Pipes ```|``` should work like in bash
+- Pipes ```|```
 
-- ```Environment variables``` ($ followed by characters) should work like in bash
+- ```Environment variables``` ($ followed by characters)
 
-- ```$?``` should work like in bash
+- ```$?``` to store exit status of the previous command
 
-- ```ctrl-C```, ```ctrl-D``` and ```ctrl-\``` should have the same result as in bash
+- ```ctrl-C```, ```ctrl-D``` and ```ctrl-\```
 
 ## How to test
 > Run the following commands
