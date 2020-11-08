@@ -49,7 +49,7 @@ $ ./minishell
 
 ## Examples
 
-- Create ```minishell``` executable
+- Create ```minishell``` executable and run
 
 [![minishell_0](https://github.com/qingqingqingli/readme_images/blob/master/minishell_0.png)](https://github.com/qingqingqingli/minishell)
 
