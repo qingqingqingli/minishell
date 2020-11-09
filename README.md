@@ -5,7 +5,7 @@
 
 Working on this project allows you to travel through time and come back to problems people faced when Windows didn't exist. 
 
-This is a group project completed by [Q. Li](https://github.com/qingqingqingli") & [R. Bakker](https://github.com/rbakker96)
+This is a group project completed by [Q. Li](https://github.com/qingqingqingli) & [R. Bakker](https://github.com/rbakker96)
 
 ## Technical considerations
 > The following elements need to work like in bash
